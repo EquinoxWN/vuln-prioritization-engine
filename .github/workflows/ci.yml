@@ -1,0 +1,58 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Least privilege: the workflow can read the code and nothing else.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Every action is pinned to a full commit SHA.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: make ci
+      - name: Known-vulnerability audit
+        run: make audit
+      - name: Offline report on the fixtures (annotation)
+        run: |
+          make demo > demo.txt
+          echo "::notice title=vpe report on the fixtures::$(tail -n 1 demo.txt)"
+
+  # Optional live check that the public feeds still parse; it never blocks a merge.
+  live-feeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e .
+      - name: Download KEV, OSV and EPSS (timeouts, bounded retries)
+        run: |
+          mkdir -p .tmp
+          if make fetch-live > live.txt 2>&1; then
+            echo "::notice title=vpe fetch (live)::$(grep -E '^(KEV|OSV|EPSS):' live.txt | tr '\n' ' ')"
+          else
+            cat live.txt
+            echo "::error title=vpe fetch (live)::$(tail -n 1 live.txt)"
+            exit 1
+          fi

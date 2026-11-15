@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vuln-prioritization-engine"
+version = "0.1.0"
+description = "Normalize scanner reports and SBOMs into one finding list with OSV details, EPSS scores and CISA KEV status."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["packaging>=24,<27"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-timeout>=2.3",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "pip-audit>=2.7",
+]
+
+[project.scripts]
+vpe = "vuln_prioritization_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+vuln_prioritization_engine = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+timeout = 120
+
+[tool.ruff]
+line-length = 100
+extend-exclude = [".tmp", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "S", "SIM", "RUF", "N", "C4", "PT", "RET", "PIE", "PERF", "BLE", "E722"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S108", "S311"]
+
+[tool.mypy]
+strict = true
+files = ["src", "tests"]

@@ -1,0 +1,363 @@
+{
+  "descriptor": {
+    "name": "grype",
+    "version": "0.87.0"
+  },
+  "matches": [
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-34480",
+          "id": "CVE-2026-34480"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [],
+        "dataSource": "https://github.com/advisories/GHSA-3pxv-7cmr-fjr4",
+        "description": "Apache Log4j Core: Silent log event loss in XmlLayout due to unescaped XML 1.0 forbidden characters",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.25.4"
+          ]
+        },
+        "id": "GHSA-3pxv-7cmr-fjr4",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-34477",
+          "id": "CVE-2026-34477"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [],
+        "dataSource": "https://github.com/advisories/GHSA-6hg6-v5c8-fphq",
+        "description": "Apache Log4j Core: `verifyHostName` attribute silently ignored in TLS configuration",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.25.4"
+          ]
+        },
+        "id": "GHSA-6hg6-v5c8-fphq",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-45046",
+          "id": "CVE-2021-45046"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [
+          {
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+            "version": "3.1"
+          }
+        ],
+        "dataSource": "https://github.com/advisories/GHSA-7rjr-3q55-vv33",
+        "description": "Incomplete fix for Apache Log4j vulnerability",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.16.0",
+            "2.12.2",
+            "2.3.1"
+          ]
+        },
+        "id": "GHSA-7rjr-3q55-vv33",
+        "namespace": "github:language:java",
+        "severity": "Critical"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-44832",
+          "id": "CVE-2021-44832"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [
+          {
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          }
+        ],
+        "dataSource": "https://github.com/advisories/GHSA-8489-44mv-ggj8",
+        "description": "Improper Input Validation and Injection in Apache Log4j2",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.3.2",
+            "2.12.4",
+            "2.17.1"
+          ]
+        },
+        "id": "GHSA-8489-44mv-ggj8",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-34479",
+          "id": "CVE-2026-34479"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [],
+        "dataSource": "https://github.com/advisories/GHSA-h383-gmxw-35v2",
+        "description": "Apache Log4j 1 to Log4j 2 bridge: silent log event loss in Log4j1XmlLayout due to unescaped XML 1.0 forbidden characters",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.25.4"
+          ]
+        },
+        "id": "GHSA-h383-gmxw-35v2",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228",
+          "id": "CVE-2021-44228"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [
+          {
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:H",
+            "version": "3.1"
+          }
+        ],
+        "dataSource": "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q",
+        "description": "Remote code injection in Log4j",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.15.0",
+            "2.3.1",
+            "2.12.2"
+          ]
+        },
+        "id": "GHSA-jfh8-c2jp-5v3q",
+        "namespace": "github:language:java",
+        "severity": "Critical"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2021-45105",
+          "id": "CVE-2021-45105"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [
+          {
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+            "version": "3.1"
+          }
+        ],
+        "dataSource": "https://github.com/advisories/GHSA-p6xc-xr62-6r2g",
+        "description": "Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.12.3",
+            "2.17.0",
+            "2.3.1"
+          ]
+        },
+        "id": "GHSA-p6xc-xr62-6r2g",
+        "namespace": "github:language:java",
+        "severity": "High"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-core-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-core",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-68161",
+          "id": "CVE-2025-68161"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [],
+        "dataSource": "https://github.com/advisories/GHSA-vc5p-v9hr-52mj",
+        "description": "Apache Log4j does not verify the TLS hostname in its Socket Appender",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.25.3"
+          ]
+        },
+        "id": "GHSA-vc5p-v9hr-52mj",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/opt/app/lib/log4j-api-2.14.1.jar"
+          }
+        ],
+        "name": "log4j-api",
+        "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1",
+        "type": "java-archive",
+        "version": "2.14.1"
+      },
+      "relatedVulnerabilities": [
+        {
+          "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2026-49844",
+          "id": "CVE-2026-49844"
+        }
+      ],
+      "vulnerability": {
+        "cvss": [],
+        "dataSource": "https://github.com/advisories/GHSA-qv9r-c865-cp47",
+        "description": "Apache Log4j API: Improper encoding of non-finite floating-point values during MapMessage JSON serialization",
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.25.5",
+            "2.26.1"
+          ]
+        },
+        "id": "GHSA-qv9r-c865-cp47",
+        "namespace": "github:language:java",
+        "severity": "Moderate"
+      }
+    },
+    {
+      "artifact": {
+        "locations": [
+          {
+            "path": "/var/lib/dpkg/status"
+          }
+        ],
+        "name": "libc6",
+        "type": "deb",
+        "version": "2.36-9"
+      },
+      "relatedVulnerabilities": [],
+      "vulnerability": {
+        "fix": {
+          "state": "fixed",
+          "versions": [
+            "2.36-9+deb12u3"
+          ]
+        },
+        "id": "CVE-2023-4911",
+        "severity": "High"
+      }
+    }
+  ],
+  "source": {
+    "target": {
+      "userInput": "shop-api:1.4.0"
+    },
+    "type": "image"
+  }
+}

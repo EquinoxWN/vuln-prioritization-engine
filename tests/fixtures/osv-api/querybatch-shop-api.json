@@ -1,0 +1,211 @@
+{
+  "fetched_at": "2026-11-14T03:54:25+00:00",
+  "results": [
+    {
+      "ids": [
+        "GHSA-2wrh-6pvc-2jm9",
+        "GHSA-4374-p667-p6c8",
+        "GHSA-4v7x-pqxf-cx7m",
+        "GHSA-5cv4-jp36-h3mw",
+        "GHSA-qppj-fm5r-hxr3",
+        "GHSA-qxp5-gwg8-xv66",
+        "GHSA-vvgc-356p-c3xw",
+        "GO-2023-1988",
+        "GO-2023-2102",
+        "GO-2024-2687",
+        "GO-2024-3333",
+        "GO-2025-3503",
+        "GO-2025-3595",
+        "GO-2026-4440",
+        "GO-2026-4441",
+        "GO-2026-4918",
+        "GO-2026-5025",
+        "GO-2026-5026",
+        "GO-2026-5027",
+        "GO-2026-5028",
+        "GO-2026-5029",
+        "GO-2026-5030",
+        "GO-2026-5942",
+        "GO-2026-6603",
+        "GO-2026-6610",
+        "GO-2026-6611",
+        "GO-2026-6612",
+        "GO-2026-6617",
+        "GO-2026-6860",
+        "GO-2026-6866"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "Go",
+          "name": "golang.org/x/net"
+        },
+        "version": "0.7.0"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-qv9r-c865-cp47"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "Maven",
+          "name": "org.apache.logging.log4j:log4j-api"
+        },
+        "version": "2.14.1"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-3pxv-7cmr-fjr4",
+        "GHSA-6hg6-v5c8-fphq",
+        "GHSA-7rjr-3q55-vv33",
+        "GHSA-8489-44mv-ggj8",
+        "GHSA-h383-gmxw-35v2",
+        "GHSA-jfh8-c2jp-5v3q",
+        "GHSA-p6xc-xr62-6r2g",
+        "GHSA-vc5p-v9hr-52mj"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "Maven",
+          "name": "org.apache.logging.log4j:log4j-core"
+        },
+        "version": "2.14.1"
+      }
+    },
+    {
+      "ids": [],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "attrs"
+        },
+        "version": "23.2.0"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-cpwx-vrp4-4pq7",
+        "GHSA-g3rq-g295-4j3m",
+        "GHSA-h5c8-rqwp-cp95",
+        "GHSA-h75v-3vvj-5mfj",
+        "GHSA-q2x7-8rv6-6q7h",
+        "PYSEC-2021-66",
+        "PYSEC-2026-1471",
+        "PYSEC-2026-1473",
+        "PYSEC-2026-1474",
+        "PYSEC-2026-1475"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "jinja2"
+        },
+        "version": "2.11.2"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-8q59-q68h-6hv4",
+        "PYSEC-2021-142"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "pyyaml"
+        },
+        "version": "5.3.1"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-9hjg-9r4m-mvj7",
+        "GHSA-9wx4-h78v-vm56",
+        "GHSA-gc5v-m9x4-r6x2",
+        "GHSA-j8r2-6x86-q33q",
+        "PYSEC-2023-74",
+        "PYSEC-2026-1872",
+        "PYSEC-2026-1873",
+        "PYSEC-2026-2275"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "requests"
+        },
+        "version": "2.25.1"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-2xpw-w6gg-jr37",
+        "GHSA-34jh-p97f-mpxf",
+        "GHSA-38jv-5279-wg99",
+        "GHSA-8988-9cw3-xx77",
+        "GHSA-g4mx-q9vg-27p4",
+        "GHSA-gm62-xv2j-4w53",
+        "GHSA-pq67-6m6q-mj2v",
+        "GHSA-q2q7-5pp4-w6pg",
+        "GHSA-qccp-gfcp-xxvc",
+        "GHSA-v845-jxx5-vc9f",
+        "GHSA-vxq7-64xx-v4gw",
+        "PYSEC-2021-108",
+        "PYSEC-2023-192",
+        "PYSEC-2023-212",
+        "PYSEC-2026-141",
+        "PYSEC-2026-1994",
+        "PYSEC-2026-1995",
+        "PYSEC-2026-1996",
+        "PYSEC-2026-1998",
+        "PYSEC-2026-1999",
+        "PYSEC-2026-4175",
+        "PYSEC-2026-4177"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "PyPI",
+          "name": "urllib3"
+        },
+        "version": "1.26.4"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-29mw-wpgm-hmr9",
+        "GHSA-35jh-r3h4-6jhm",
+        "GHSA-r5fr-rjxr-66jc",
+        "GHSA-xxjr-mmjv-4gpg"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "npm",
+          "name": "lodash"
+        },
+        "version": "4.17.20"
+      }
+    },
+    {
+      "ids": [
+        "GHSA-xvch-5gv4-984h"
+      ],
+      "next_page_token": null,
+      "query": {
+        "package": {
+          "ecosystem": "npm",
+          "name": "minimist"
+        },
+        "version": "1.2.5"
+      }
+    }
+  ],
+  "source": "https://api.osv.dev/v1/querybatch"
+}

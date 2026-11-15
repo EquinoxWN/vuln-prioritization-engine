@@ -1,0 +1,254 @@
+{
+  "ArtifactName": "/src/shop-api",
+  "ArtifactType": "filesystem",
+  "CreatedAt": "2026-11-13T09:05:00Z",
+  "Results": [
+    {
+      "Class": "lang-pkgs",
+      "Target": "web/package-lock.json",
+      "Type": "npm",
+      "Vulnerabilities": [
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            }
+          },
+          "FixedVersion": "4.17.21",
+          "InstalledVersion": "4.17.20",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/lodash@4.17.20"
+          },
+          "PkgName": "lodash",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28500",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "Regular Expression Denial of Service (ReDoS) in lodash",
+          "VendorIDs": [
+            "GHSA-29mw-wpgm-hmr9"
+          ],
+          "VulnerabilityID": "CVE-2020-28500"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+            }
+          },
+          "FixedVersion": "4.17.21",
+          "InstalledVersion": "4.17.20",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/lodash@4.17.20"
+          },
+          "PkgName": "lodash",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337",
+          "Severity": "HIGH",
+          "Status": "fixed",
+          "Title": "Command Injection in lodash",
+          "VendorIDs": [
+            "GHSA-35jh-r3h4-6jhm"
+          ],
+          "VulnerabilityID": "CVE-2021-23337"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          },
+          "FixedVersion": "4.18.0",
+          "InstalledVersion": "4.17.20",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/lodash@4.17.20"
+          },
+          "PkgName": "lodash",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-4800",
+          "Severity": "HIGH",
+          "Status": "fixed",
+          "Title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+          "VendorIDs": [
+            "GHSA-r5fr-rjxr-66jc"
+          ],
+          "VulnerabilityID": "CVE-2026-4800"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+            }
+          },
+          "FixedVersion": "4.17.23",
+          "InstalledVersion": "4.17.20",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/lodash@4.17.20"
+          },
+          "PkgName": "lodash",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-13465",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "Lodash has Prototype Pollution Vulnerability in `_.unset`, `_.omit`, and `_.pullAt` functions",
+          "VendorIDs": [
+            "GHSA-xxjr-mmjv-4gpg"
+          ],
+          "VulnerabilityID": "CVE-2025-13465"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          },
+          "FixedVersion": "1.2.6, 0.2.4",
+          "InstalledVersion": "1.2.5",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/minimist@1.2.5"
+          },
+          "PkgName": "minimist",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-44906",
+          "Severity": "CRITICAL",
+          "Status": "fixed",
+          "Title": "Prototype Pollution in minimist",
+          "VendorIDs": [
+            "GHSA-xvch-5gv4-984h"
+          ],
+          "VulnerabilityID": "CVE-2021-44906"
+        }
+      ]
+    },
+    {
+      "Class": "lang-pkgs",
+      "Target": "worker/go.mod",
+      "Type": "gomod",
+      "Vulnerabilities": [
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+            }
+          },
+          "FixedVersion": "0.13.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-3978",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "Improper rendering of text nodes in golang.org/x/net/html",
+          "VendorIDs": [
+            "GHSA-2wrh-6pvc-2jm9"
+          ],
+          "VulnerabilityID": "CVE-2023-3978"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+          },
+          "FixedVersion": "0.17.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39325",
+          "Severity": "HIGH",
+          "Status": "fixed",
+          "Title": "HTTP/2 rapid reset can cause excessive work in net/http",
+          "VendorIDs": [
+            "GHSA-4374-p667-p6c8"
+          ],
+          "VulnerabilityID": "CVE-2023-39325"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            }
+          },
+          "FixedVersion": "0.23.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45288",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "net/http, x/net/http2: close connections when receiving too many headers",
+          "VendorIDs": [
+            "GHSA-4v7x-pqxf-cx7m"
+          ],
+          "VulnerabilityID": "CVE-2023-45288"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+            }
+          },
+          "FixedVersion": "0.55.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-25680",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "Go Net HTML parser is vulnerable to denial of service",
+          "VendorIDs": [
+            "GHSA-5cv4-jp36-h3mw"
+          ],
+          "VulnerabilityID": "CVE-2026-25680"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L/E:H"
+            }
+          },
+          "FixedVersion": "0.17.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-44487",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "HTTP/2 Stream Cancellation Attack",
+          "VendorIDs": [
+            "GHSA-qppj-fm5r-hxr3"
+          ],
+          "VulnerabilityID": "CVE-2023-44487"
+        },
+        {
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L"
+            }
+          },
+          "FixedVersion": "0.36.0",
+          "InstalledVersion": "v0.7.0",
+          "PkgName": "golang.org/x/net",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-22870",
+          "Severity": "MODERATE",
+          "Status": "fixed",
+          "Title": "HTTP Proxy bypass using IPv6 Zone IDs in golang.org/x/net",
+          "VendorIDs": [
+            "GHSA-qxp5-gwg8-xv66"
+          ],
+          "VulnerabilityID": "CVE-2025-22870"
+        }
+      ]
+    },
+    {
+      "Class": "os-pkgs",
+      "Target": "debian 12.5",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "InstalledVersion": "2.36-9",
+          "PkgName": "libc6",
+          "Severity": "HIGH",
+          "VulnerabilityID": "CVE-2023-4911"
+        }
+      ]
+    },
+    {
+      "Class": "lang-pkgs",
+      "Target": "requirements-dev.txt",
+      "Type": "pip",
+      "Vulnerabilities": null
+    }
+  ],
+  "SchemaVersion": 2
+}
